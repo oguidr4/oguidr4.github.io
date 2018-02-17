@@ -16,3 +16,6 @@ let ProjectObject = {
 
 console.log(ProjectArray)
 console.log(ProjectObject)
+console.log(ProjectArray[2])
+console.log(ProjectObject.title)
+console.log(ProjectObject["title"])
