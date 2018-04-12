@@ -1,5 +1,5 @@
 let mywebmap = L.map('webmap').setView([38, -98], 4)
-let myLightmap1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mywebmap)
+let myGreymap1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mywebmap)
 
 let myfirstmap = L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}')
 let myWatercolormap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
@@ -10,13 +10,13 @@ let myWatercolormap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/wa
 	ext: 'png'
 });
 
-let myBasemaps = {
-  'Light Basemap': myLightmap1,
+let myMapOptions = {
+  'Grey Basemap': myGreymap1,
   'Green Basemap': myfirstmap,
   'Water Color Basemap': myWatercolormap2
 }
 
-L.control.layers(myBasemaps).addTo(mywebmap)
+L.control.layers(myMapOptions).addTo(mywebmap)
 
 mygeojsonStyle = function (feature1) {
   let popmales = feature1.properties.MALES
