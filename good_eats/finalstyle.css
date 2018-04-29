@@ -1,17 +1,19 @@
 body {
-  text-align: center;
-  background-color: #fff2e6
+  text-align: left;
+  background-color: #ffe6e6;
+  color: #666666;
 }
 
 #title {
-  color: #d98cb3;
-  font-family: "Bernard MT Condensed";
+  font-family: "Bodini MT Condensed";
   font-size: 28pt;
+  margin-left: 120px;
+  font-weight: bold;
 }
 
 #subtitle {
-  color: #84e184;
-  font-family: "Arial";
+  font-family: "Bodini MT Condensed";
+  margin-left: 120px
 }
 
 #webmap {
