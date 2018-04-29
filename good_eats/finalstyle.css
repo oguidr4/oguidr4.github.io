@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  background-color: #fff2e6
+}
+
+#title {
+  color: #d98cb3;
+  font-family: "Bernard MT Condensed";
+  font-size: 28pt;
+}
+
+#subtitle {
+  color: #84e184;
+  font-family: "Arial";
+}
+
+#webmap {
+  height: 500px;
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
